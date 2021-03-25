@@ -12,17 +12,17 @@ namespace Ejercicio3
         {
             ConsoleKeyInfo cki;
             Console.WriteLine("ingrese una tecla, x para terminar");
-            var input = Console.ReadKey();
+            var input = Console.ReadKey(true);
           
             do
             {
                 
-                cki = Console.ReadKey();
+                cki = Console.ReadKey(true);
                 Console.WriteLine(cki.Key.ToString()); 
             } while (cki.Key != ConsoleKey.X); 
            
             
-            //porque en la consola me muestra dos letras? 
+            
         }
     }
 }
